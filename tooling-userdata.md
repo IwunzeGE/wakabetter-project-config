@@ -11,8 +11,8 @@ systemctl start php-fpm
 systemctl enable php-fpm
 git clone https://github.com/IwunzeGE/DevopsToolingWebsite.git
 mkdir /var/www/html
-cp -R /tooling-1/html/*  /var/www/html/
-cd /tooling-1
+cp -R /DevopsToolingWebsite/html/*  /var/www/html/
+cd /DevopsToolingWebsite
 mysql -h wakabetter.czpfy2twzuxf.us-west-1.rds.amazonaws.com -u admin -p wakabetter_db < tooling-db.sql
 cd /var/www/html/
 touch healthstatus
